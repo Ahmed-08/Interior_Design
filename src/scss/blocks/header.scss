@@ -1,0 +1,103 @@
+$mainColor: #FFFFFF;
+
+@mixin flex($dir, $side){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $side;
+
+}
+
+@mixin font($size, $weight, $lineHeight, $f){
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lineHeight;
+    font-style: $f;
+}
+
+.nav{
+    height: 49px;
+    color: $mainColor;
+    @include flex(row, space-between);
+
+    .logo{
+        position: absolute;
+        left: 100px;
+        top: 26px;
+        @include font(50px, 400, 60px, 'Arial, Helvetica, sans-serif');
+    }
+
+    nav{
+        position: absolute;
+        top: 40px;
+        left: 390.5px;
+
+        ul{
+            @include flex(row, stretch);
+            gap: 35px;
+            list-style: none;
+
+            li{
+                display: inline;
+            }
+
+            a{
+                text-decoration: none;
+                color: #ABAEB7;
+                @include font(16px, 500, 18.75px, 'Arial, Helvetica, sans-serif');
+                cursor: pointer;
+            }
+        }
+    }
+
+    button{
+        position: absolute;
+        top: 25px;
+        right: 100px;
+        color: $mainColor;
+        background-color: transparent;
+        border: 1px solid $mainColor;
+        width: 133px;
+        height: 49px;
+        cursor: pointer;
+    }
+}
+
+.header-title{
+    width: 680px;
+    position: absolute;
+    top: 273px;
+    left: 100px;
+
+    h5{
+        color: #FFC978;
+        @include font(16px, 400, 21px, 'Arial, Helvetica, sans-serif');
+    }
+
+    h1{
+        color: $mainColor;
+        @include font(75px, 400, 94px, 'Arial, Helvetica, sans-serif');
+    }
+
+    button{
+        display: inline-block;
+        position: absolute;
+        background-color: transparent;
+        color: $mainColor;
+        border: 1px solid $mainColor;
+        width: 212px;
+        height: 59px;
+        cursor: pointer;
+    }
+}
+
+.block{
+    width: 750px;
+    height: 100px;
+    position: absolute;
+    top: 900px;
+    left: 0;
+    color: #12151E;
+    width: 212px;
+    height: 59px;
+    @include font(168px, 800, 100px, 'Arial, Helvetica, sans-serif');
+}

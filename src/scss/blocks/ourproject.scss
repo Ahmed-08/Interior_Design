@@ -1,0 +1,99 @@
+#ourproject{
+
+    @mixin font($size, $weight, $family, $lineHeight){
+        font-size: $size;
+        font-weight: $weight;
+        font-family: $family;
+        line-height: $lineHeight;
+    }
+
+    header{
+        display: flex;
+
+        h3{
+            width: 153px;
+            height: 21px;
+            color: #FFC978;
+            position: absolute;
+            top: 2677px;
+            left: 315px;
+            @include font(16px, 400, 'Arial, Helvetica, sans-serif', 21px);
+        }
+
+        h1{
+            color: #FFFFFF;
+            position: absolute;
+            top: 2713px;
+            left: 315px;
+            @include font(60px, 400, 'Arial, Helvetica, sans-serif', 21px);
+        }
+
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 40px;
+            position: absolute;
+            top: 2715px;
+            left: 1170px;
+
+            a{
+                text-decoration: none;
+                color: #FFFFFF;
+                @include font(16px, 600, 'Arial, Helvetica, sans-serif', 26px);
+            }
+        }
+    }
+
+    img{
+        position: absolute;
+    }
+    .image-1{
+        top: 2840px;
+        left: 315px;
+    }
+    .image-2{
+        top: 2890px;
+        left: 642px;
+    }
+
+    .image-3{
+        top: 2840px;
+        left: 969px;
+    }
+
+    .image-4{
+        top: 2890px;
+        left: 1296px;
+    }
+
+    .image-5{
+        top: 3360px;
+        left: 315px;
+    }
+
+    .image-6{
+        top: 3410px;
+        left: 642px;
+    }
+
+    .image-7{
+        top: 3360px;
+        left: 969px;
+    }
+
+    .image-8{
+        top: 3410px;
+        left: 1296px;
+    }
+
+    hr {
+        border: none;
+        background-color: #2E313A;
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        top: 3870px;
+        z-index: 200;
+       }
+}
+

@@ -1,0 +1,97 @@
+.nav {
+  height: 49px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav .logo {
+  position: absolute;
+  left: 100px;
+  top: 26px;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 60px;
+  font-style: "Arial, Helvetica, sans-serif";
+}
+.nav nav {
+  position: absolute;
+  top: 40px;
+  left: 390.5px;
+}
+.nav nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  gap: 35px;
+  list-style: none;
+}
+.nav nav ul li {
+  display: inline;
+}
+.nav nav ul a {
+  text-decoration: none;
+  color: #ABAEB7;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  font-style: "Arial, Helvetica, sans-serif";
+  cursor: pointer;
+}
+.nav button {
+  position: absolute;
+  top: 25px;
+  right: 100px;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  width: 133px;
+  height: 49px;
+  cursor: pointer;
+}
+
+.header-title {
+  width: 680px;
+  position: absolute;
+  top: 273px;
+  left: 100px;
+}
+.header-title h5 {
+  color: #FFC978;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  font-style: "Arial, Helvetica, sans-serif";
+}
+.header-title h1 {
+  color: #FFFFFF;
+  font-size: 75px;
+  font-weight: 400;
+  line-height: 94px;
+  font-style: "Arial, Helvetica, sans-serif";
+}
+.header-title button {
+  display: inline-block;
+  position: absolute;
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  width: 212px;
+  height: 59px;
+  cursor: pointer;
+}
+
+.block {
+  width: 750px;
+  height: 100px;
+  position: absolute;
+  top: 900px;
+  left: 0;
+  color: #12151E;
+  width: 212px;
+  height: 59px;
+  font-size: 168px;
+  font-weight: 800;
+  line-height: 100px;
+  font-style: "Arial, Helvetica, sans-serif";
+}

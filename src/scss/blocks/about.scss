@@ -1,0 +1,76 @@
+#about {
+    $mainColor: #FFFFFF;
+    $textColor: #ABAEB7;
+    @mixin  font($size, $weight, $color, $family, $lineHeight){
+        font-size: $size;
+        font-weight: $weight;
+        color: $color;
+        font-family: $family;
+        line-height: $lineHeight;
+    }
+
+    @mixin twist($deg, $t, $l){
+        transform: $deg;
+        top: $t;
+        left: $l;
+        
+    }
+
+    h1{
+        width: 241px;
+        height: 77px;
+        position: absolute;
+        top: 1950px;
+        left: 315px;
+        z-index: 100;
+        @include font(60px, 400, $mainColor, 'Arial, Helvetica, sans-serif', 77px);
+    }
+
+    .txt{
+        width: 440px;
+        height: 105px;
+        position: absolute;
+        top: 2075px;
+        left: 425px;
+        @include font(16px, 400, $textColor, 'Arial, Helvetica, sans-serif', 26px);
+    }
+
+    .procent{
+        width: 192px;
+        height: 120px;
+        position: absolute;
+        top: 2212px;
+        left: 315px;
+        @include font(64px, 400, $mainColor, 'Arial, Helvetica, sans-serif', 82px);
+        span{
+            @include font(128px, 400, $mainColor, 'Arial, Helvetica, sans-serif', 164px);  
+        }
+    }
+
+    .txt-2{
+        width: 78px;
+        height: 60px;
+        position: absolute;
+        top: 2272px;
+        left: 551px;
+        @include font(20px, 400, $textColor, 'Arial, Helvetica, sans-serif', 30px); 
+    }
+
+    #i-1{
+        position: absolute;
+        top: 2362px;
+        left: 315px;
+    }
+
+    #i-2{
+        position: absolute;
+        top: 2037px;
+        left: 975px;
+    }
+
+    #i-3{
+        position: absolute;
+        top: 1950px;
+        left: 1305px;
+    }
+}

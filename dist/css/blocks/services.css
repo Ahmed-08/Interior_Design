@@ -1,0 +1,58 @@
+.section {
+  position: absolute;
+  display: flex;
+}
+.section #i-1 {
+  position: absolute;
+  top: 1181px;
+  left: 315px;
+}
+.section .header {
+  position: absolute;
+  width: 500px;
+  height: 111px;
+  color: #FFFFFF;
+  text-align: center;
+  top: 1147px;
+  left: 710px;
+}
+.section .header h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFC978;
+}
+.section .header h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 77px;
+}
+.section #i-2 {
+  position: absolute;
+  top: 1310px;
+  left: 645px;
+}
+.section #i-3 {
+  position: absolute;
+  top: 1310px;
+  left: 975px;
+}
+.section #i-4 {
+  position: absolute;
+  top: 1181px;
+  left: 1305px;
+}
+.section .text {
+  width: 591px;
+  height: 100px;
+  color: #12151E;
+  font-size: 140px;
+  font-weight: 800;
+  line-height: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 1761px;
+  left: 1315px;
+}
